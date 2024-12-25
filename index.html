@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Gym Management System</h1>
+        </header>
+
+        <!-- Add Member Section -->
+        <section class="add-member">
+            <h2>Add a New Member</h2>
+            <form id="add-member-form">
+                <input type="text" id="name" placeholder="Enter Member's Name" required>
+                <input type="email" id="email" placeholder="Enter Member's Email" required>
+                <button type="submit">Add Member</button>
+            </form>
+        </section>
+
+        <!-- Member List Section -->
+        <section class="members-list">
+            <h2>Gym Members</h2>
+            <ul id="members"></ul>
+        </section>
+
+        <!-- Attendance Section -->
+        <section class="attendance">
+            <h2>Mark Attendance</h2>
+            <form id="attendance-form">
+                <input type="date" id="attendance-date" required>
+                <select id="attendance-member" required></select>
+                <button type="submit">Mark Attendance</button>
+            </form>
+            <h3>Attendance Sheet</h3>
+            <table id="attendance-sheet">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Member Name</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Attendance records will be dynamically added here -->
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
